@@ -1,0 +1,151 @@
+.toggle .button {
+    background-color: #5C5C5C;
+    width: 50px;
+    height: 25px;
+    border-radius: 200px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+}
+
+.toggle .button::before {
+    position: absolute;
+    content: '';
+    background: #fff;
+    width: 19px;
+    height: 19px;
+    border-radius: 200px;
+    margin: 3px;
+    transition: 0.2s;
+}
+
+.toggle input:checked+.button {
+    background-color: #DF0B0B;
+}
+
+.toggle input:checked+.button::before {
+    transform: translateX(25px);
+}
+
+.toggle input {
+    display: none;
+}
+
+.headline {
+    padding: 35px;
+    height: 105px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.headline h1 {
+    color: #000;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.block .heading {
+    margin-top: 25px;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.block .heading h3 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #DF0B0B;
+    line-height: 50px;
+    padding: 0 35px;
+}
+
+.block .col-md-8 {
+    padding: 0 35px;
+}
+
+.block .col-md-4 {
+    padding-right: 25px;
+}
+
+.block .col-md-4 img {
+    display: block;
+    float: right;
+    cursor: pointer;
+}
+
+.block .col-md-4 .toggle {
+    float: right;
+}
+
+.block .first,
+.block .second {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    border-bottom: 1px solid #707070;
+}
+
+.block .second .d-flex {
+    float: right;
+}
+
+.block .second .d-flex p {
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+
+.block .last {
+    margin-bottom: 100px;
+    border: none;
+}
+
+.block .last img {
+    cursor: pointer;
+}
+
+/* settings password section */
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 520px) {
+
+    /* for settings */
+    .block .col-md-8 {
+        padding: 0 10px !important;
+    }
+
+    .block .col-md-8 {
+        width: 60%;
+    }
+
+    .block .col-md-4 {
+        width: 40%;
+        padding-right: 0px;
+    }
+
+    .block .first,
+    .block .second {
+        width: 95%;
+    }
+
+    .block .first .col-md-8,
+    .block .second .col-md-8 {
+        width: 70%;
+    }
+
+    .block .first .col-md-4,
+    .block .second .col-md-4 {
+        width: 30%;
+    }
+
+    .block .first .col-md-8 p,
+    .block .second .col-md-8 p {
+        font-size: 14px;
+    }
+
+    .block .heading h3 {
+        padding: 0 20px;
+    }
+}

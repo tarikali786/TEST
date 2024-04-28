@@ -1,0 +1,115 @@
+.support-heading {
+    height: 18.3125rem;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, #DF0B0B 0%, rgba(255, 107, 0, 0.77) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.support-heading h1 {
+    color: #FFF;
+    font-size: 1.302rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.search-container {
+    position: relative;
+    width: 21.91669rem;
+    border-radius: 1.6275rem;
+    /* border: 0.868px solid #000; */
+    background: #FFF;
+}
+
+.search-box {
+    border-radius: 1.6275rem;
+    /* border: 0.868px solid #000; */
+    height: 2.54969rem;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding-left: 40px;
+    /* Space for the icon */
+}
+
+.search-box::before {
+    width: 1.08481rem;
+    height: 1.085rem;
+    content: '';
+    background: url('../../images/svg/input_icons/search.svg') center center no-repeat;
+    background-size: contain;
+    /* Unicode character for the magnifying glass icon */
+    position: absolute;
+    left: 10px;
+    /* Adjust the left position of the icon */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #888;
+}
+
+.support-container {
+    display: flex;
+    padding-top: 3.30919rem;
+    padding-bottom: 9.14706rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.30919rem;
+}
+
+.support-section {
+    width: 47.95625rem;
+    height: 18.52rem;
+}
+
+.support-section>h1 {
+    color: #000;
+    font-size: 1.302rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.48);
+}
+.support-card-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1.6em;
+}
+.support-card {
+    width: 18.54169rem;
+    flex-shrink: 0;
+    display: flex;
+    gap: 1.6em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.48);
+    padding: 1em 0;
+}
+
+.support-card>.icon>img {
+    width: 3.87538rem;
+    height: 2.71244rem;
+    flex-shrink: 0;
+    stroke-width: 1.736px;
+    stroke: #DF0B0B;
+}
+
+.support-card h1 {
+    color: #000;
+    font-size: 1.302rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.support-card p {
+    color: #919191;
+    font-size: 0.868rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

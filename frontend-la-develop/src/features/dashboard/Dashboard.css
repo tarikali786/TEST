@@ -1,0 +1,264 @@
+.account-status {
+    display: flex;
+    position: relative;
+    height: 3.75rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: linear-gradient(93deg, #FFF 47.4%, #ECE8E8 99.74%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.account-status .icon {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #CDCDCD;
+}
+
+.account-status .info {
+    border-right: 1px solid #CDCDCD;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    display: grid;
+    align-items: center;
+}
+
+.account-status .info.last-child {
+    border: none;
+}
+
+.account-status .info h5 {
+    color: #000;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.account-status .info h4 {
+    color: #DF0B0B;
+    font-family: Poppins;
+    font-size: 0.89881rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.account-status .info h6 {
+    color: #000;
+    font-size: 0.67406rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.info-icon {
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    background-image: url("../../images/svg/info.svg");
+    width: 0.9375rem;
+    height: 0.9375rem;
+    flex-shrink: 0;
+    stroke-width: 0.5px;
+    stroke: #484848;
+}
+.refreral-img{
+    max-width: 100%;
+}
+.refreral h3 {
+    text-align: center;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.refreral-link {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #DF0B0B;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    height: 3.125rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    border: 1px solid #B9B9B9;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-wrap: auto;
+}
+
+img.copy {
+    width: 2.125rem;
+    max-width: 10%;
+    height: 3.5em;
+}
+
+.announcement {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #292929;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    width: 16.375rem;
+    height: 4rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    border: 1px solid #B9B9B9;
+    background: linear-gradient(115deg, #FFF 1.97%, #EDE9E9 71.07%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.announcement-img {
+    position: absolute;
+    right: -2rem;
+    top: -2rem;
+    width: 4.75rem;
+    height: 4.75rem;
+    flex-shrink: 0;
+    background: url("../../images/svg/red_announce.svg"), 50% / cover no-repeat;
+}
+
+.dashboard-prelaunch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16.375rem;
+    height: 6.75rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    border: 1px solid #B9B9B9;
+    background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #DF0B0B;
+    text-align: center;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+@media (min-width: 521px) and (max-width: 1024px) {
+    .account-status {
+        height: 3.23288rem;
+        flex-shrink: 0;
+        border-radius: 0.53881rem;
+    }
+
+    .account-status .info h5 {
+        font-size: 0.64656rem;
+
+    }
+
+    .account-status .info h4 {
+        font-size: 0.77481rem;
+    }
+
+    .account-status .info h6 {
+        font-size: 0.62144rem;
+
+
+    }
+
+    .info-icon {
+        width: 0.80819rem;
+        height: 0.80819rem;
+    }
+
+    .refreral h3 {
+        font-size: 0.80819rem;
+    }
+
+    .refreral-link {
+        font-size: 0.64656rem;
+
+    }
+
+    img.copy {
+        width: 1.83194rem;
+        height: 2.69406rem;
+    }
+
+    .announcement {
+        width: 14.42731rem;
+        height: 3.44838rem;
+        font-size: 0.86213rem;
+
+    }
+
+    .announcement-img {
+        width: 4.09494rem;
+        height: 4.09494rem;
+    }
+
+    .dashboard-prelaunch {
+        font-size: 0.75431rem;
+        width: 14.42731rem;
+        height: 5.81919rem;
+
+    }
+}
+
+@media (min-width: 320px) and (max-width: 520px) {
+    .account-status {
+        height: 1.791rem;
+
+    }
+
+    .account-status .info h5 {
+        font-size: 0.4375rem;
+
+    }
+
+    .account-status .info h4 {
+        font-size: 0.51344rem;
+
+    }
+
+    .account-status .info h6 {
+        font-size: 0.38513rem;
+
+    }
+
+    .info-icon {
+        width: 0.44781rem;
+        height: 0.45313rem;
+    }
+
+    .refreral h3 {
+        font-size: 0.67044rem;
+
+    }
+
+    .refreral-link {
+        font-size: 0.51844rem;
+
+    }
+
+    img.copy {
+        width: 1.50344rem;
+        height: 3.42169rem;
+    }
+
+    .announcement {
+        font-size: 0.72675rem;
+    }
+
+    .dashboard-prelaunch {
+        font-size: 0.63594rem;
+        width: 15.5345rem;
+        height: 4.90563rem;
+    }
+}

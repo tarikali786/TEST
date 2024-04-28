@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    scroll-behavior: smooth;
+    background: #F5F5F7;
+    max-width: 100%;
+    overflow-x: hidden !important;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.row,
+.col,
+.col-6,
+.container-fluid,
+.container-xxl{
+    margin: 0;
+    padding: 0;
+}
+
+.row>* {
+    padding: 0;
+}
+
+#reset-this-root {
+    all: unset;
+}
+
+.font-17 {
+    font-size: 17px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: #FFFFFF;
+    color: #212529;
+    font-size: 16px;
+    max-width: 100%;
+    margin-top: 44px !important;
+}
+
+.mt-44 {
+    margin-top: 2.75rem;
+}

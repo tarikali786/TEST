@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.star {
+  position: absolute;
+  top: -20px;
+  color: #f0e54e;
+  animation: animate 50s linear forwards;
+}
+
+.star-1 {
+  position: absolute;
+  top: -20px;
+  color: #f0e54e;
+}
+
+.star::before {
+  content: "\2605";
+  font-family: fontAwesome;
+  text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 50px #fff;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(740vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.mainLayout {
+  z-index: 10000;
+}

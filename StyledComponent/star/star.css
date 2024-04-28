@@ -1,0 +1,40 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    min-height: 300vh;
+    background-color: #111;
+    color: #fff;
+    max-width: 100%;
+  }
+  
+  .star {
+    position: absolute;
+    top: -20px;
+    color: #fff;
+    animation: animate 5s linear forwards;
+  }
+  .star::before {
+    content: "\f005";
+    font-family: fontAwesome;
+    text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 50px #fff;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(400vh) rotate(360deg);
+      opacity: 0;
+    }
+  }

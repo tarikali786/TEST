@@ -1,0 +1,67 @@
+.deposit-card {
+  max-width: 100%;
+  width: 982px;
+  min-height: 394px;
+  border-radius: 10px;
+  padding: 3em;
+  background: linear-gradient(180deg, rgba(212, 13, 11, 0.87) 0%, #fe8738 100%);
+}
+
+.deposit-card label {
+  color: #fff;
+  flex-shrink: 0;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.deposit-card .input-field {
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid #e5e5e5;
+  background: linear-gradient(91deg, #fff 49.06%, #b9b9b9 102.27%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  overflow: hidden;
+}
+
+.deposit-card .input-field .icon {
+  max-width: fit-content;
+  padding: 1em;
+  width: 20%;
+  border-right: 1px solid #acacac;
+}
+
+.deposit-card .input-field .icon img {
+  width: 28px;
+  height: 27.157px;
+  flex-shrink: 0;
+}
+
+.deposit-card .input-field input,
+.deposit-card .input-field select {
+  width: 80%;
+  padding-left: 0.5em;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+.deposit-card-button {
+  max-width: 100%;
+  width: 982px;
+  text-align: right;
+  margin-top: 1em;
+}
+
+.deposit-card-button button {
+  color: #ffe4a7;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 0.3125rem;
+  background: #df0b0b;
+  padding: 0.5em 0.5em;
+  border: none;
+}

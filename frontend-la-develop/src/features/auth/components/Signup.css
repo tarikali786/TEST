@@ -1,0 +1,267 @@
+.container-signup {   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-x: hidden;  
+}
+.container-signup .fa-check:before{
+  content: '';
+}
+::selection {
+  color: #fff;
+  background: #df0b0b;
+}
+.box23 { 
+  width: 500px;
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  z-index: 999;
+  border-radius: 5px;
+  padding: 20px 35px 10px 35px;
+  border: 1px solid #fff;
+  box-shadow: 1px 1px 22px #0000001f;
+}
+.box23 header {
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.box23 .form-outer {
+  width: 100%;
+  overflow: hidden;
+}
+.box23 .form-outer form {
+  display: flex;
+  width: 500%;
+}
+.box23 .form-outer form .page {
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.box23 .form-outer form .page .title {
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+.box23 .form-outer form .page .field {
+  width: 427px;
+  height: 45px; 
+  margin: 45px 0 20px 0;
+  display: flex;
+  position: relative;
+}
+.box23 form .page .field .label {
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+.box23 form .page .field input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+.box23 form .page .field select {
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+.box23 form .page .field button {
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #df0b0b;
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+.box23 form .page .field button:hover {
+  background: #000;
+}
+.box23 form .page .btns button {
+  margin-top: -20px !important;
+}
+.box23 form .page .btns button.prev {
+  margin-right: 3px;
+  font-size: 17px;
+}
+.box23 form .page .btns button.next {
+  margin-left: 3px;
+}
+.box23 .progress-line { 
+  display: flex;
+  margin: 40px 0 10px 0;
+  user-select: none;
+}
+.box23 .progress-line .step {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.box23 .progress-line .step p {
+  font-weight: 500;
+  font-size: 18px;
+  color: #df0b0b;
+  margin-bottom: 8px;
+}
+.box23 .progress-line .step .bullet {
+  height: 25px;
+  width: 25px;
+  border: 2px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+.box23 .progress-line .step .bullet.active {
+  border-color: #df0b0b;
+  background: #df0b0b;
+}
+.box23 .progress-line .step .bullet span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.box23 .progress-line .active span {
+  color: #fff;
+}
+/* .box23 .progress-line .step .bullet:before,
+.box23 .progress-line .step .bullet:after {
+    position: absolute;
+    content: ""; 
+    bottom: 9px;
+    right: -58px;
+    height: 3px;
+    width: 50px;
+    background: #262626;
+} */
+.box23 .progress-line .step .bullet.active:after {
+  background: #df0b0b;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.box23 .progress-line .step:last-child .bullet:before,
+.box23 .progress-line .step:last-child .bullet:after {
+  display: none;
+}
+.box23 .progress-line .step p.active {
+  color: #df0b0b;
+  transition: 0.2s linear;
+}
+.box23 .progress-line .step .check {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.box23 .progress-line .step .check.active { 
+  display: block; 
+  color: #fff;  
+}  
+@media screen and (max-width: 520px) {    
+  .container-signup{  
+    max-width: 100% !important; 
+    overflow-x: hidden !important;
+  }
+  .box23 { 
+    width: 85%;    
+    padding: 20px; 
+  } 
+  .box23 .progress-line .step p {
+    font-size: 14px;
+  }
+  .box23 .progress-line .step .bullet:before, .box23 .progress-line .step .bullet:after {
+    right: -48px;
+    height: 2px;
+    width: 40px;  
+  } 
+  .bg-shape1{ 
+    animation: none;
+  } 
+  .bg-shape2{
+      animation: none;
+  }
+  .box23 .form-outer form .page .field {
+    width: auto;
+  }
+  .box23 form .page .btns button.prev, 
+  .box23 form .page .btns button.next ,
+  .box23 form .page .submit {   
+    width: 39% !important;    
+  }
+ 
+}
+@media screen and (max-width: 475px) {  
+  .container-signup{
+    max-width: 100% !important; 
+    overflow-x: hidden !important;
+  }
+  .box23 { 
+    width: 85%;    
+    padding: 20px; 
+  } 
+  .box23 .progress-line .step p {
+    font-size: 14px;
+  }
+  .box23 .progress-line .step .bullet:before, .box23 .progress-line .step .bullet:after {
+    right: -38px; 
+    height: 2px;
+    width: 30px;
+  } 
+  .bg-shape1{ 
+    animation: none;
+  } 
+  .bg-shape2{
+      animation: none;
+  }
+  .box23 .form-outer form .page .field {
+    width: auto;
+  }
+  .box23 form .page .btns button.prev, 
+  .box23 form .page .btns button.next ,
+  .box23 form .page .submit {   
+    width: 39% !important;   
+  }
+
+}
+@media screen and (max-width: 430px){ 
+  .box23 .progress-line .step .bullet:before, .box23 .progress-line .step .bullet:after {
+    right: -32px;
+    height: 2px; 
+    width: 25px;
+  } 
+  .box23 .progress-line .step p {
+    font-size: 12px;
+  } 
+} 
+@media screen and (max-width: 380px){  
+  .box23 .progress-line .step .bullet:before, .box23 .progress-line .step .bullet:after {
+    right: -26px; 
+    height: 2px;
+    width: 20px;
+  } 
+  .box23 .progress-line .step p {
+    font-size: 12px; 
+  } 
+}

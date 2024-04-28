@@ -1,0 +1,141 @@
+.fa,
+.far,
+.fas,
+*::before {
+  font-family: "Font Awesome 5 Free"!important;
+}
+
+.main-content {
+  padding: 3.125rem 3.1875rem 4.5rem 1.25rem;
+}
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.page-title {
+  color: #000;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+::placeholder {
+  color: #2b2b2b;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+/* 
+select {
+    padding: .2em .8em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    background-image: url("./images/svg/arrow_down.svg");
+    background-repeat: no-repeat;
+    border-radius: 0.32325rem;
+    border: 0.862px solid #DF0B0B;
+    width: 7.60088rem;
+    flex-shrink: 0;
+    background-position-x: 96%;
+    background-position-y: 1em;
+}
+
+select option {
+    border-radius: 0rem 0rem 0.3125rem 0.3125rem;
+    border-right: 1px solid #DF0B0B;
+    border-bottom: 1px solid #DF0B0B;
+    border-left: 1px solid #DF0B0B;
+    background-color: #F2F2F2;
+}
+
+select option:checked {
+    background-color: transparent;
+}
+ */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the dropdown button */
+.dropdown-button {
+  padding: 0.2em 0.8em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  /* background-image: url("./images/svg/arrow_down.svg"); */
+  background-repeat: no-repeat;
+  border-radius: 0.32325rem;
+  border: 0.862px solid #df0b0b;
+  /* width: 8.60088rem; */
+  flex-shrink: 0;
+  background-position-x: 96%;
+  background-position-y: 1em;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Style for the arrow icon */
+.dropdown-button::after {
+  content: "";
+  background: url("./images/svg/arrow_down.svg") center center no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-left: 5px;
+}
+
+/* Style for the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 8.60088rem;
+  border-radius: 0rem 0rem 0.3125rem 0.3125rem;
+  border-right: 1px solid #df0b0b;
+  border-left: 1px solid #df0b0b;
+  background-color: #f2f2f2;
+  text-align: left;
+  /* Adjust the width as needed */
+}
+
+/* Style for the dropdown items */
+.dropdown-content a {
+  border-radius: 0rem 0rem 0.3125rem 0.5125rem;
+  border-right: 1px solid #df0b0b;
+  border-bottom: 1px solid #df0b0b;
+  border-left: 1px solid #df0b0b;
+  background: #f2f2f2;
+  color: #000;
+  display: block;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Remove background color for the selected item */
+.dropdown-content a.selected {
+  background-color: transparent;
+}
+
+/* Show the dropdown content when the dropdown button is hovered over */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media only screen and (max-width: 991px) {
+  .overflow-x-md-hidden {
+    overflow-x: hidden;
+    padding: 0 0.2em;
+  }
+}

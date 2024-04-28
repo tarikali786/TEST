@@ -1,0 +1,86 @@
+.rank-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rank-cards .user-detail-card {
+    width: 33.6875rem;
+    height: 13.4375rem;
+    flex-shrink: 0;
+    border-radius: 1.04544rem;
+    border: 1px solid #B9B1B1;
+    background: #FFF;
+    box-shadow: 0px 3.345px 3.345px 0px rgba(0, 0, 0, 0.25);
+    padding: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.user-details {
+    margin-left: .5em;
+}
+
+.rank-cards .user-detail-card img {
+    width: 10.45588rem;
+    height: 11.06919rem;
+    flex-shrink: 0;
+}
+
+.user-detail-card .user-details h3 {
+    color: #000;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.user-details .d-grid,
+.statistics .d-grid {
+    grid-template-columns: auto auto;
+    padding-left: .5em;
+    gap: 1rem;
+}
+
+.rank-cards .title {
+    margin-right: 2.5em;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.rank-cards .value {
+    color: #DF0B0B;
+    font-size: 1.16369rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.rank-cards .statistics {
+    width: 25.875rem;
+    height: 13.6875rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: linear-gradient(89deg, #FFF -8.42%, #FFF -8.4%, #FFF 236.95%);
+    box-shadow: 0px 3.486px 3.486px 0px rgba(0, 0, 0, 0.25);
+}
+
+.rank-cards .statistics>h1.heading {
+    padding-left: .5em;
+    align-items: center;
+    display: flex;
+    width: 25.875rem;
+    height: 2.5885rem;
+    flex-shrink: 0;
+    border-radius: 0.42956rem 0.42956rem 0rem 0rem;
+    border-top: 0.907px solid #FFF;
+    background: linear-gradient(90deg, #DF0B0B -35.48%, rgba(255, 107, 0, 0.79) 206.32%);
+    box-shadow: 0px 2.436px 2.436px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
